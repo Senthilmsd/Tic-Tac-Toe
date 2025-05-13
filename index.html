@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <div id="players">
+        <p id="Player-1"></p>
+        <img src="./Assets/player-1.jpg" alt="play-1" height="50px" width="50px">
+        <h1>Player 1</h1>
+        <h1>vs</h1>
+        <h1>Player 2</h1>
+        <img src="./Assets/player-2.jpg" alt="play-2" height="50px" width="50px">
+        <p id="Player-2"></p>
+    </div>
+
+    <div id="selectPlayer">
+        <h2>Select player-1 first And Select Player-2</h2>
+        <div id="selection">
+            <h1 id="Player-X" onclick="playerSelectionX()">X</h1>
+            <p>OR</p>
+            <h1 id="Player-O" onclick="playerSelectionO()">O</h1>
+        </div>
+    </div>
+    <div>
+        <button id="playButton" onclick="play()">Let's Play</button>
+    </div>
+    <div id="gameBox">
+        <div id="row-1">
+            <div id="box-1" onclick="box('box-1')" class="0"></div>
+            <div id="box-2" onclick="box('box-2')" class="1"></div>
+            <div id="box-3" onclick="box('box-3')" class="2"></div>
+        </div>
+        <div id="row-2">
+            <div id="box-4" onclick="box('box-4')" class="3"></div>
+            <div id="box-5" onclick="box('box-5')" class="4"></div>
+            <div id="box-6" onclick="box('box-6')" class="5"></div>
+        </div>
+        <div id="row-3">
+            <div id="box-7" onclick="box('box-7')" class="6"></div>
+            <div id="box-8" onclick="box('box-8')" class="7"></div>
+            <div id="box-9" onclick="box('box-9')" class="8"></div>
+        </div>
+    </div>
+    <h2 id="Result"></h2>
+    <button id="Reset" onclick="resetPage()">Reset</button>
+    <script src="./script.js"></script>
+</body>
+</html>

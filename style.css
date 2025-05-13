@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Player section */
+#players {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+#Player-1, #Player-2{
+  font-size: 5rem;
+}
+#selectPlayer h2{
+  justify-self: center;
+}
+#Player-X, #Player-O{
+  font-size: 3rem;
+  background-color: #e6f2ff;
+  border: 2px solid grey;
+  padding: 0px 15px;
+  margin: 20px 20px;
+  border-radius: 5px;
+}
+
+#players img{
+  border-radius: 50%;
+}
+#players h1 {
+  font-size: 20px;
+  color: #333;
+}
+#selection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#playButton{
+  background-color: skyblue;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Game board styling */
+#gameBox {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#row-1,#row-2,#row-3{
+  display: flex;
+  gap: 20px;
+}
+
+#gameBox div div {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#gameBox div div:hover {
+  background-color: #e6f2ff;
+}
+
+/* Result text */
+#Result {
+  margin: 15px;
+  color: #0077cc;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Reset Button */
+#Reset {
+  display: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Reset:hover {
+  background-color: #005fa3;
+}
